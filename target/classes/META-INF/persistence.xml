@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+	<persistence-unit name="UniversityFees"> <!-- Your persistence unit name used in the Java code -->
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider> 
+        
+         <class>org.bktech.university.ulk.universityFees.models.institution</class>
+       
+         <class>org.bktech.university.dashboard.models.UserAccount</class>
+         <class>org.bktech.university.dashboard.models.UserProfile</class>
+         <class>org.bktech.university.dashboard.models.Institution</class>
+         <class>org.bktech.university.dashboard.models.Student</class>
+         <class>org.bktech.university.dashboard.models.PaymentLog</class>
+         <class>org.bktech.university.dashboard.models.AuthToken</class>
+         <class>org.bktech.university.dashboard.models.PaymentPurpose</class>
+         <class>org.bktech.university.dashboard.models.SubPaymentPurpose</class>
+         <class>org.bktech.university.dashboard.models.AcademicProgram</class>
+         <class>org.bktech.university.dashboard.models.DegreeProgram</class>
+         <class>org.bktech.university.dashboard.models.Faculty</class>
+         <class>org.bktech.university.dashboard.models.InstitutionCalender</class>
+         <class>org.bktech.university.dashboard.models.StudyProgramType</class>
+         <class>org.bktech.university.dashboard.models.ThirdPartyAuthentication</class>
+         <class>org.bktech.university.dashboard.models.BankAccount</class>
+         <class>org.bktech.university.dashboard.models.Bank</class>
+         <class>org.bktech.university.dashboard.models.InvoiceArchive</class>
+         <class>org.bktech.university.dashboard.models.InvoiceBankAccount</class>
+         
+         
+       
+        
+         
+     <properties>
+                        <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+                        <property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/university_db" />
+				      <property name="javax.persistence.jdbc.user"
+				value="root" />
+				      <property name="javax.persistence.jdbc.password"
+				value="" />	
+
+			<!-- EclipseLink should create the database schema automatically -->
+			
+			 <property name="javax.persistence.schema-generation.database.action" value="none"/>
+			 
+			 
+			 
+			 
+		
+		</properties>
+	</persistence-unit>
+</persistence>
